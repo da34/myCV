@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人简历</title>
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1555324_ur7i1zezhas.css" />
+    <style>
+        * {
+            padding: 0;
+            border: 0;
+            margin: 0;
+        }
+
+        body {
+            line-height: 1.5;
+            font-size: 14px;
+            font-family: 'lucida Grande', Verdana, 'Microsoft YaHei'
+        }
+
+        .wrap {
+            border: 1px solid #dadada;
+            width: 810px;
+            background: #fff;
+            box-shadow: 0 0 2px rgba(0, 0, 0, .1);
+            margin: 100px auto;
+            display: grid;
+            grid: 1fr / 220px 1fr;
+        }
+
+        .info {
+            grid-area: 1 / 2 / 2 / 1;
+            background: #F5F5F5;
+            padding: 0 14px 0 20px;
+        }
+
+        .content {
+            grid-area: 1 / 3 / 2 / 2;
+            padding: 30px 25px 45px 17px;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-left {
+            text-align: left;
+        }
+
+        .info .avatar {
+            /* text-align: center; */
+            width: 130px;
+            border-radius: 2px;
+            overflow: hidden;
+            margin: 40px auto 15px;
+            
+            /* animation-play-state: paused; */
+        }
+        .avatar  img {
+            width: 100%;
+        }
+        .info .avatar:hover {
+            animation: scaleZoom .3s ease-in-out;
+        }
+
+        .info .msg {
+            color: #374760;
+        }
+
+        .msg .personage-basic {
+            padding-top: 3px;
+            font-size: 14px;
+            /* vertical-align: middle; */
+        }
+
+        .name {
+            font-size: 34px;
+            font-weight: bold;
+        }
+
+        i.icon {
+            color: #828FA0;
+            padding-right: 5px
+        }
+
+        .line {
+            margin: 13px 8px;
+            line-height: 0;
+            font-size: 1px;
+            border-top: 1px solid #e1e1e1;
+        }
+
+        .content .title {
+            position: relative;
+            padding: 0 30px 5px 0;
+            font-size: 16px;
+            font-weight: bold;
+            color: #374760;
+            transition: all .3s ease-in;
+            cursor: pointer;
+        }
+
+        .content .title:hover {
+            color: pink;
+        }
+
+        .item-base {
+            padding-bottom: 23px;
+        }
+
+        .itme-content {
+            font-size: 14px;
+            padding: 5px 0 5px 3px;
+        }
+
+        .itme-content-work {
+            font-size: 14px;
+            display: grid;
+            grid: auto auto / 1fr;
+            grid-gap: 4px 0;
+            padding: 5px 0 5px 3px;
+        }
+
+        .tmpl_modCnt {
+            grid-area: 1 / 2 / 2 / 1;
+        }
+
+        ul.item-wrap {
+            padding-left: 20px;
+            grid-area: 3 / 2 / 3 / 1;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .work-firm,
+        .work-job {
+            padding: 0 15px;
+        }
+
+        .line-blue {
+            position: relative;
+            line-height: 1;
+            border-bottom: 1px solid #5484ed;
+        }
+
+        .edu_modCnt {
+            display: grid;
+            grid: auto / 1fr 1fr 1fr;
+        }
+
+        .edu-wrap {
+            padding: 3px 0 0 5px;
+        }
+        @keyframes scaleZoom {
+            from {
+                transform: scale(.95);
+            }
+            50% {
+                transform: scale(1.07);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <aside class="info">
+            <div class="avatar">
+                <img src="./image/2512115b6b3c7f2f401b849f5ccb8e36d0059155.jpg@1200w_1698h.webp">
+            </div>
+            <div class="msg text-center">
+                <div class="name">
+                    <p>罗世玉</p>
+                </div>
+                <div class="text-left personage-basic">
+                    <i class="iconfont icon-user icon"></i>
+                    男&nbsp;&nbsp;20岁&nbsp;&nbsp;南宁
+                </div>
+                <div class="text-left personage-basic">
+                    <i class="iconfont icon-edu-s icon"></i>
+                    大专
+                </div>
+                <div class="text-left personage-basic">
+                    <i class="iconfont icon-shijian icon"></i>
+                    应届毕业生
+                </div>
+                <div class="text-left personage-basic">
+                    <i class="iconfont icon-shouji icon"></i>
+                    1359xxxxxxx
+                </div>
+                <div class="text-left personage-basic">
+                    <i class="iconfont icon-youxiang icon"></i>
+                    125502xxx@qq.com
+                </div>
+            </div>
+            <div class="line"></div>
+        </aside>
+        <main class="content">
+            <div class="item-base">
+                <div class="title line-blue">求职意向</div>
+                <div class="itme-content">
+                    Web前端工程师
+                </div>
+            </div>
+            <div class="item-base">
+                <div class="title line-blue">个人技能</div>
+                <div class="itme-content">
+                    <ul class="item-wrap">
+                        <li>掌握HTML5/CSS3，熟悉传统布局、Flex布局、Grid布局、移动端适配等</li>
+                        <li>熟悉React / Redux技术栈等使用，能够使用React进行基本开发</li>
+                        <li>熟悉Vue技术栈如Vue-Router、Vuex、Vue-CLI及相关流行库的使用，理解其重要概念</li>
+                        <li>熟悉Node.js开发，能搭建基础后台开发</li>
+                        <li>熟悉前后端交互技术JSONP、AJAX，了解fetch</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item-base">
+                <div class="title line-blue">工作经历</div>
+                <div class="itme-content-work">
+                    <div class="tmpl_modCnt">
+                        <span class="work-time">2013.09 - 2017.01</span>
+                        <span class="work-firm bold">XXXX事业部</span>
+                        <span class="work-job bold">前端工程师</span>
+                    </div>
+                    <ul class="item-wrap">
+                        <li>职位描述：资深前端工程师</li>
+                        <li>工作描述：该项目的目的是搭建线上学习平台，把线下课堂的完整学习流程搬到线上，平台包括课程展示、购买、直播、录播、作业、权限管理、停课复课、试听等几十个大功能。该项目采用前后分离的技术方案，
+                            我主要负责前端部分的开发。项目前端部分使用Vue技术栈，移动端平台使用自己实现的vue ui组件库。</li>
+                        <li>技术栈：vue、vue-router、vuex、element-ui、typescript、webpack、es6、移动端</li>
+                        <li>项目成果：项目支撑饥人谷日常教学活动、运营活动的正常开展，支持数千学生的日常线上学习，几十万用户的日常访问。</li>
+                    </ul>
+                </div>
+                <div class="itme-content-work">
+                    <div class="tmpl_modCnt">
+                        <span class="work-time">2013.09 - 2017.01</span>
+                        <span class="work-firm bold">XXXX事业部</span>
+                        <span class="work-job bold">前端工程师</span>
+                    </div>
+                    <ul class="item-wrap">
+                        <li>职位描述：资深前端工程师</li>
+                        <li>工作描述：该项目的目的是搭建线上学习平台，把线下课堂的完整学习流程搬到线上，平台包括课程展示、购买、直播、录播、作业、权限管理、停课复课、试听等几十个大功能。该项目采用前后分离的技术方案，
+                            我主要负责前端部分的开发。项目前端部分使用Vue技术栈，移动端平台使用自己实现的vue ui组件库。</li>
+                        <li>技术栈：vue、vue-router、vuex、element-ui、typescript、webpack、es6、移动端</li>
+                        <li>项目成果：项目支撑饥人谷日常教学活动、运营活动的正常开展，支持数千学生的日常线上学习，几十万用户的日常访问。</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item-base">
+                <div class="title line-blue">教育经历</div>
+                <div class="itme-content">
+                    <div class="edu_modCnt">
+                        <span class="edu-time">2013.09 - 2017.01</span>
+                        <span class="edu-firm bold">XXX大学</span>
+                        <span class="edu-job bold">XXX专业</span>
+                    </div>
+                    <div class="edu-wrap">
+                        多次获得校一等奖学金，成绩排名专业前10%.
+                    </div>
+                </div>
+                <div class="itme-content">
+                    <div class="edu_modCnt">
+                        <span class="edu-time">2013.09 - 2017.01</span>
+                        <span class="edu-firm bold">XXX大学</span>
+                        <span class="edu-job bold">XXX专业</span>
+                    </div>
+                    <div class="edu-wrap">
+                        多次获得校一等奖学金，成绩排名专业前10%.
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
