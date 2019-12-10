@@ -34,6 +34,7 @@
             grid-area: 1 / 2 / 2 / 1;
             background: #F5F5F5;
             padding: 0 14px 0 20px;
+            overflow: hidden;
         }
 
         .content {
@@ -55,12 +56,14 @@
             border-radius: 2px;
             overflow: hidden;
             margin: 40px auto 15px;
-            
+
             /* animation-play-state: paused; */
         }
-        .avatar  img {
+
+        .avatar img {
             width: 100%;
         }
+
         .info .avatar:hover {
             animation: scaleZoom .3s ease-in-out;
         }
@@ -155,13 +158,54 @@
         .edu-wrap {
             padding: 3px 0 0 5px;
         }
+
+        /* 适配移动端 */
+        @media (max-width: 810px) {
+            .wrap {
+                display: block;
+                width: 100%;
+                margin: 0;
+            }
+
+            .info {
+                background: #fff;
+            }
+
+            .info .avatar {
+                width: 86px;
+                height: 86px;
+                border-radius: 50%;
+                margin: 15px auto 7px;
+            }
+
+            .info .line {
+                display: none;
+            }
+
+            .avatar img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .edu_modCnt {
+                grid: auto / 140px 1fr 1fr;
+                text-align: center;
+            }
+
+            .content {
+                padding-bottom: 0;
+            }
+        }
+
         @keyframes scaleZoom {
             from {
                 transform: scale(.95);
             }
+
             50% {
                 transform: scale(1.07);
             }
+
             to {
                 transform: scale(1);
             }
